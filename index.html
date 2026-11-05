@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Patel Raj - Full-Stack Developer & MCA Graduate Student. Explore projects, technical skills, achievements, and contact details." />
+  <meta name="keywords" content="Patel Raj, Portfolio, Full-Stack Developer, Python, Flask, PHP, MCA, Web Developer, Bhavnagar" />
+  <meta name="author" content="Patel Raj" />
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Patel Raj | Full-Stack Developer & MCA Student" />
+  <meta property="og:description" content="Explore projects like BookMyStay and Expense Tracker, technical skills, and achievements." />
+  
+  <title>Patel Raj | Full-Stack Developer Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="glow-bg glow-1"></div>
+  <div class="glow-bg glow-2"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-code">&lt;</span>Raj<span class="logo-accent">.dev</span><span class="logo-code">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+        <a href="Resume-raj(1).pdf" target="_blank" class="btn btn-outline nav-resume-btn" download="Patel_Raj_Resume.pdf">
+          <i data-lucide="download"></i>
+          <span>Resume</span>
+        </a>
+        <button id="mobile-toggle" class="icon-btn mobile-menu-btn" aria-label="Toggle Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge hero-badge">
+            <span class="status-dot"></span>
+            <span>Available for Internships & Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-text">Patel Raj</span>
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span class="role-prefix">I am a </span>
+            <span class="typed-text" id="typed-text"></span>
+            <span class="cursor">&nbsp;</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate software developer pursuing MCA at <strong>Department of Computer Science, MKBU</strong>. 
+            Focused on crafting scalable backends, clean APIs, and interactive web applications with 
+            <strong>Python (Flask)</strong>, <strong>PHP</strong>, and <strong>modern databases</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i data-lucide="folder-git-2"></i>
+              <span>View Projects</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i data-lucide="send"></i>
+              <span>Get in Touch</span>
+            </a>
+            <a href="Resume-raj(1).pdf" target="_blank" class="btn btn-ghost" download="Patel_Raj_Resume.pdf">
+              <i data-lucide="file-text"></i>
+              <span>Download CV</span>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <a href="https://github.com/Raj-1632" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+              <svg class="lucide lucide-github" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+            </a>
+            <a href="https://linkedin.com/in/raj-patel" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+              <svg class="lucide lucide-linkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:raj643995@gmail.com" class="social-link" title="Email">
+              <i data-lucide="mail"></i>
+            </a>
+            <a href="tel:+918238388031" class="social-link" title="Phone">
+              <i data-lucide="phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card glass-panel">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="terminal-title">raj@developer:~$</span>
+            </div>
+            <div class="terminal-body font-mono">
+              <p><span class="t-prompt">$</span> cat developer.json</p>
+              <div class="json-code">
+                <span class="j-key">"name"</span>: <span class="j-val">"Patel Raj"</span>,<br/>
+                <span class="j-key">"degree"</span>: <span class="j-val">"MCA (2025 - 2027)"</span>,<br/>
+                <span class="j-key">"university"</span>: <span class="j-val">"MKBU, Bhavnagar"</span>,<br/>
+                <span class="j-key">"stack"</span>: [<br/>
+                &nbsp;&nbsp;<span class="j-val">"Python"</span>, <span class="j-val">"Flask"</span>, <span class="j-val">"PHP"</span>,<br/>
+                &nbsp;&nbsp;<span class="j-val">"MySQL"</span>, <span class="j-val">"JavaScript"</span><br/>
+                ],<br/>
+                <span class="j-key">"awards"</span>: <span class="j-val">"2nd Rank @ Flash-2024"</span>,<br/>
+                <span class="j-key">"status"</span>: <span class="j-val highlight">"Ready to Build & Scale"</span>
+              </div>
+              <p class="terminal-cursor"><span class="t-prompt">$</span> <span class="blink">_</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Stats Strip -->
+    <section class="stats-strip">
+      <div class="container stats-container">
+        <div class="stat-card">
+          <div class="stat-number">2+</div>
+          <div class="stat-title">Academic Degrees (BCA & MCA)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">2+</div>
+          <div class="stat-title">Full-Stack Flagship Projects</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">2nd</div>
+          <div class="stat-title">Flash-2024 Competition Rank</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-title">Dedication & Quick Learning</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get to know me</span>
+          <h2 class="section-title">About <span class="highlight-text">Me</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text glass-panel">
+            <h3 class="about-heading">
+              A developer driven by curiosity, backend architecture, and real-world problem solving.
+            </h3>
+            <p>
+              I am currently pursuing my <strong>Master of Computer Application (MCA)</strong> at the 
+              <strong>Department Of Computer Science, MKBU, Bhavnagar (2025–2027)</strong>, having previously graduated 
+              with a <strong>Bachelor of Computer Application (BCA)</strong> from Shree Swaminarayan College of Computer Science (2022–2025).
+            </p>
+            <p>
+              My journey centers around developing responsive, resilient, and data-driven web applications. From building 
+              a complex hotel booking ecosystem with payment and map APIs to creating intuitive financial trackers, 
+              I enjoy translating requirements into clean, scalable software architecture.
+            </p>
+            
+            <div class="personal-details-grid">
+              <div class="detail-item">
+                <i data-lucide="map-pin" class="detail-icon"></i>
+                <div>
+                  <span class="detail-label">Location</span>
+                  <span class="detail-value">Bhavnagar, Gujarat, India</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i data-lucide="mail" class="detail-icon"></i>
+                <div>
+                  <span class="detail-label">Email</span>
+                  <a href="mailto:raj643995@gmail.com" class="detail-value link">raj643995@gmail.com</a>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i data-lucide="phone" class="detail-icon"></i>
+                <div>
+                  <span class="detail-label">Phone</span>
+                  <a href="tel:+918238388031" class="detail-value link">+91 8238388031</a>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i data-lucide="graduation-cap" class="detail-icon"></i>
+                <div>
+                  <span class="detail-label">Education</span>
+                  <span class="detail-value">MCA Candidate @ MKBU</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-pillars">
+            <div class="pillar-card glass-panel">
+              <div class="pillar-icon-box">
+                <i data-lucide="server"></i>
+              </div>
+              <h4>Backend Engineering</h4>
+              <p>Designing REST APIs, session authentications, and relational database schemas with Python Flask & PHP MySQL.</p>
+            </div>
+
+            <div class="pillar-card glass-panel">
+              <div class="pillar-icon-box">
+                <i data-lucide="layout"></i>
+              </div>
+              <h4>Frontend Crafting</h4>
+              <p>Constructing clean, mobile-first responsive interfaces using modern HTML5, CSS3, and JavaScript.</p>
+            </div>
+
+            <div class="pillar-card glass-panel">
+              <div class="pillar-icon-box">
+                <i data-lucide="zap"></i>
+              </div>
+              <h4>API & Payment Integrations</h4>
+              <p>Seamlessly integrating third-party services like Razorpay payment gateway and OpenCage mapping systems.</p>
+            </div>
+
+            <div class="pillar-card glass-panel">
+              <div class="pillar-icon-box">
+                <i data-lucide="users"></i>
+              </div>
+              <h4>Collaborative Mindset</h4>
+              <p>Agile team player with fast adaptability, strong communication, and proven hackathon teamwork experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">What I Bring to the Table</span>
+          <h2 class="section-title">Technical <span class="highlight-text">Skills</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skill-filters">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="languages">Languages</button>
+          <button class="filter-btn" data-filter="frameworks">Frameworks & Tools</button>
+          <button class="filter-btn" data-filter="databases">Databases</button>
+          <button class="filter-btn" data-filter="soft">Soft Skills</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Languages -->
+          <div class="skill-card glass-panel" data-category="languages">
+            <div class="skill-icon-wrap"><i data-lucide="terminal"></i></div>
+            <div class="skill-info">
+              <h4>Python</h4>
+              <span class="skill-tag">Backend & Scripting</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="languages">
+            <div class="skill-icon-wrap"><i data-lucide="code-2"></i></div>
+            <div class="skill-info">
+              <h4>PHP</h4>
+              <span class="skill-tag">Web Development</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="languages">
+            <div class="skill-icon-wrap"><i data-lucide="binary"></i></div>
+            <div class="skill-info">
+              <h4>C / C++</h4>
+              <span class="skill-tag">Core Fundamentals</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="languages">
+            <div class="skill-icon-wrap"><i data-lucide="coffee"></i></div>
+            <div class="skill-info">
+              <h4>Java</h4>
+              <span class="skill-tag">OOP & Application Dev</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="languages">
+            <div class="skill-icon-wrap"><i data-lucide="sparkles"></i></div>
+            <div class="skill-info">
+              <h4>JavaScript</h4>
+              <span class="skill-tag">Interactive Frontend</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="languages">
+            <div class="skill-icon-wrap"><i data-lucide="file-code"></i></div>
+            <div class="skill-info">
+              <h4>HTML5 & CSS3</h4>
+              <span class="skill-tag">Responsive Styling</span>
+            </div>
+          </div>
+
+          <!-- Frameworks & Tools -->
+          <div class="skill-card glass-panel" data-category="frameworks">
+            <div class="skill-icon-wrap"><i data-lucide="layers"></i></div>
+            <div class="skill-info">
+              <h4>Flask</h4>
+              <span class="skill-tag">Python Web Framework</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="frameworks">
+            <div class="skill-icon-wrap"><i data-lucide="webhook"></i></div>
+            <div class="skill-info">
+              <h4>REST APIs</h4>
+              <span class="skill-tag">Endpoints & Integrations</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="frameworks">
+            <div class="skill-icon-wrap"><i data-lucide="box"></i></div>
+            <div class="skill-info">
+              <h4>ASP.NET</h4>
+              <span class="skill-tag">Enterprise Architecture</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="frameworks">
+            <div class="skill-icon-wrap"><i data-lucide="credit-card"></i></div>
+            <div class="skill-info">
+              <h4>Razorpay API</h4>
+              <span class="skill-tag">Payment Gateway</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="frameworks">
+            <div class="skill-icon-wrap"><i data-lucide="map"></i></div>
+            <div class="skill-info">
+              <h4>OpenCage API</h4>
+              <span class="skill-tag">Geocoding & Maps</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="frameworks">
+            <div class="skill-icon-wrap"><i data-lucide="git-branch"></i></div>
+            <div class="skill-info">
+              <h4>Git & GitHub</h4>
+              <span class="skill-tag">Version Control</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-card glass-panel" data-category="databases">
+            <div class="skill-icon-wrap"><i data-lucide="database"></i></div>
+            <div class="skill-info">
+              <h4>MySQL</h4>
+              <span class="skill-tag">Relational Database</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="databases">
+            <div class="skill-icon-wrap"><i data-lucide="hard-drive"></i></div>
+            <div class="skill-info">
+              <h4>Oracle Database</h4>
+              <span class="skill-tag">SQL & Data Models</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="databases">
+            <div class="skill-icon-wrap"><i data-lucide="table"></i></div>
+            <div class="skill-info">
+              <h4>SQLite</h4>
+              <span class="skill-tag">Embedded Storage</span>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-card glass-panel" data-category="soft">
+            <div class="skill-icon-wrap"><i data-lucide="check-circle-2"></i></div>
+            <div class="skill-info">
+              <h4>Problem Solving</h4>
+              <span class="skill-tag">Analytical Thinking</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="soft">
+            <div class="skill-icon-wrap"><i data-lucide="messages-square"></i></div>
+            <div class="skill-info">
+              <h4>Communication</h4>
+              <span class="skill-tag">Clear & Responsive</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="soft">
+            <div class="skill-icon-wrap"><i data-lucide="refresh-cw"></i></div>
+            <div class="skill-info">
+              <h4>Adaptability</h4>
+              <span class="skill-tag">Quick to Learn New Tech</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="soft">
+            <div class="skill-icon-wrap"><i data-lucide="users-2"></i></div>
+            <div class="skill-info">
+              <h4>Team Collaboration</h4>
+              <span class="skill-tag">Hackathon & Projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Real World Work</span>
+          <h2 class="section-title">Featured <span class="highlight-text">Projects</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: BookMyStay -->
+          <article class="project-card glass-panel">
+            <div class="project-badge-wrap">
+              <span class="project-award-badge">
+                <i data-lucide="trophy"></i> 2nd Rank @ Flash-2024
+              </span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-icon-box">
+                  <i data-lucide="hotel"></i>
+                </div>
+                <div>
+                  <h3 class="project-title">BookMyStay</h3>
+                  <span class="project-subtitle">Full-Stack Hotel, Resort & Villa Booking Platform</span>
+                </div>
+              </div>
+
+              <p class="project-description">
+                A full-featured hospitality booking platform developed using PHP and MySQL. Designed to streamline hotel room reservations with payment processing, interactive geographic discovery, and administrative oversight.
+              </p>
+
+              <div class="project-feature-list">
+                <div class="feature-bullet">
+                  <i data-lucide="check"></i>
+                  <span><strong>Interactive Mapping & Previews:</strong> Integrated OpenCage API for interactive geolocation and added 360-degree room visual previews.</span>
+                </div>
+                <div class="feature-bullet">
+                  <i data-lucide="check"></i>
+                  <span><strong>Comprehensive Booking Life Cycle:</strong> Supports flexible rescheduling, local cab integration, and automated PDF invoice generation.</span>
+                </div>
+                <div class="feature-bullet">
+                  <i data-lucide="check"></i>
+                  <span><strong>Security & Communication:</strong> Integrated Razorpay payment gateway, user authentication, automated email alerts, interactive chatbot, and a full administrative dashboard.</span>
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Razorpay API</span>
+                <span class="tech-tag">OpenCage API</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML5/CSS3</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm project-modal-trigger" data-project="bookmystay">
+                  <i data-lucide="eye"></i>
+                  <span>Deep Dive</span>
+                </button>
+                <a href="https://github.com/Raj-1632" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <svg class="lucide lucide-github" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                  <span>Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Expense Tracker -->
+          <article class="project-card glass-panel">
+            <div class="project-badge-wrap">
+              <span class="project-award-badge badge-neutral">
+                <i data-lucide="trending-up"></i> Personal Finance Analytics
+              </span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-icon-box">
+                  <i data-lucide="pie-chart"></i>
+                </div>
+                <div>
+                  <h3 class="project-title">Expense Tracker</h3>
+                  <span class="project-subtitle">Personal Budget & Spending Analytics Web Application</span>
+                </div>
+              </div>
+
+              <p class="project-description">
+                A secure and responsive personal finance tracking web application developed with Python, Flask, and SQLite. Empowers users to manage cashflow, organize expenditures, and analyze spending habits.
+              </p>
+
+              <div class="project-feature-list">
+                <div class="feature-bullet">
+                  <i data-lucide="check"></i>
+                  <span><strong>Income & Expense Ledger:</strong> Real-time logging of incomes, expenses, categories, and monthly budget limits.</span>
+                </div>
+                <div class="feature-bullet">
+                  <i data-lucide="check"></i>
+                  <span><strong>Authentication & Sessions:</strong> User registration, password encryption, and session state management via Jinja templates.</span>
+                </div>
+                <div class="feature-bullet">
+                  <i data-lucide="check"></i>
+                  <span><strong>Dynamic Analytics Dashboards:</strong> Automated summary calculations and visual breakdowns of categorical expenditure trends.</span>
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">Jinja2</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML5/CSS3</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm project-modal-trigger" data-project="expensetracker">
+                  <i data-lucide="eye"></i>
+                  <span>Deep Dive</span>
+                </button>
+                <a href="https://github.com/Raj-1632" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <svg class="lucide lucide-github" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                  <span>Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Timeline Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Academic Journey</span>
+          <h2 class="section-title">Education & <span class="highlight-text">Qualifications</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-date">2025 – 2027</div>
+              <h3 class="timeline-title">Master of Computer Application (MCA)</h3>
+              <h4 class="timeline-institution">
+                <i data-lucide="building"></i> Department Of Computer Science, MKBU, Bhavnagar
+              </h4>
+              <p class="timeline-desc">
+                Pursuing post-graduate computer science studies focusing on advanced software engineering, distributed systems, algorithms, enterprise web frameworks, and system optimization.
+              </p>
+              <div class="timeline-highlights">
+                <span class="pill-badge">Postgraduate</span>
+                <span class="pill-badge">MKBU</span>
+                <span class="pill-badge">Advanced Computing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-date">2022 – 2025</div>
+              <h3 class="timeline-title">Bachelor of Computer Application (BCA)</h3>
+              <h4 class="timeline-institution">
+                <i data-lucide="building"></i> Shree Swaminarayan College of Computer Science
+              </h4>
+              <p class="timeline-desc">
+                Completed undergraduate degree covering core computer programming (C, C++, Java, PHP, Python), database management systems (DBMS/RDBMS), web development, and object-oriented software design.
+              </p>
+              <div class="timeline-highlights">
+                <span class="pill-badge">Undergraduate</span>
+                <span class="pill-badge">Core CS</span>
+                <span class="pill-badge">Flash-2024 Winner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Achievements Section -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Honors & Competitions</span>
+          <h2 class="section-title">Achievements & <span class="highlight-text">Recognition</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="achievements-grid">
+          <div class="achievement-card glass-panel">
+            <div class="achievement-icon gold">
+              <i data-lucide="award"></i>
+            </div>
+            <div class="achievement-info">
+              <span class="achievement-year">2024</span>
+              <h3 class="achievement-title">2nd Position @ Flash-2024</h3>
+              <h4 class="achievement-venue">Shree Swaminarayan College Of Computer Science</h4>
+              <p class="achievement-desc">
+                Secured 2nd rank at the prestigious college-level technical festival competition for outstanding software demonstration and full-stack project design with <em>BookMyStay</em>.
+              </p>
+            </div>
+          </div>
+
+          <div class="achievement-card glass-panel">
+            <div class="achievement-icon blue">
+              <i data-lucide="code"></i>
+            </div>
+            <div class="achievement-info">
+              <span class="achievement-year">2025</span>
+              <h3 class="achievement-title">Participant @ HackTheSpring'25</h3>
+              <h4 class="achievement-venue">Government Engineering College (GEC), Gandhinagar</h4>
+              <p class="achievement-desc">
+                Participated in the intense collaborative hackathon, innovating solutions under strict time constraints alongside aspiring developers across Gujarat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Let's Connect</span>
+          <h2 class="section-title">Get in <span class="highlight-text">Touch</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info-col">
+            <div class="contact-card glass-panel">
+              <div class="contact-header">
+                <h3>Let's discuss opportunities, projects, or collaborations.</h3>
+                <p>
+                  Whether you have an internship opportunity, full-time opening, or want to discuss a project, my inbox is always open!
+                </p>
+              </div>
+
+              <div class="contact-channels">
+                <a href="mailto:raj643995@gmail.com" class="channel-card">
+                  <div class="channel-icon"><i data-lucide="mail"></i></div>
+                  <div class="channel-details">
+                    <span class="channel-label">Email Me</span>
+                    <span class="channel-value">raj643995@gmail.com</span>
+                  </div>
+                </a>
+
+                <a href="tel:+918238388031" class="channel-card">
+                  <div class="channel-icon"><i data-lucide="phone"></i></div>
+                  <div class="channel-details">
+                    <span class="channel-label">Call or WhatsApp</span>
+                    <span class="channel-value">+91 8238388031</span>
+                  </div>
+                </a>
+
+                <a href="https://linkedin.com/in/raj-patel" target="_blank" rel="noopener noreferrer" class="channel-card">
+                  <div class="channel-icon">
+                    <svg class="lucide lucide-linkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">LinkedIn</span>
+                    <span class="channel-value">linkedin.com/in/raj-patel</span>
+                  </div>
+                </a>
+
+                <a href="https://github.com/Raj-1632" target="_blank" rel="noopener noreferrer" class="channel-card">
+                  <div class="channel-icon">
+                    <svg class="lucide lucide-github" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">GitHub</span>
+                    <span class="channel-value">github.com/Raj-1632</span>
+                  </div>
+                </a>
+
+                <div class="channel-card no-link">
+                  <div class="channel-icon"><i data-lucide="map-pin"></i></div>
+                  <div class="channel-details">
+                    <span class="channel-label">Location</span>
+                    <span class="channel-value">Bhavnagar, Gujarat, India</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-banner">
+                <div class="resume-banner-text">
+                  <strong>Need a printable version?</strong>
+                  <span>Download my complete resume in PDF format</span>
+                </div>
+                <a href="Resume-raj(1).pdf" target="_blank" class="btn btn-primary" download="Patel_Raj_Resume.pdf">
+                  <i data-lucide="download"></i> Download Resume
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-col">
+            <div class="form-panel glass-panel">
+              <h3 class="form-title">Send a Message</h3>
+              <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                  <label for="form-name">Your Name</label>
+                  <div class="input-wrap">
+                    <i data-lucide="user"></i>
+                    <input type="text" id="form-name" name="name" required placeholder="e.g. John Doe" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-email">Your Email</label>
+                  <div class="input-wrap">
+                    <i data-lucide="at-sign"></i>
+                    <input type="email" id="form-email" name="email" required placeholder="e.g. john@example.com" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-subject">Subject</label>
+                  <div class="input-wrap">
+                    <i data-lucide="message-square"></i>
+                    <input type="text" id="form-subject" name="subject" required placeholder="e.g. Full-Stack Role / Internship Inquiry" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-message">Message</label>
+                  <div class="input-wrap textarea-wrap">
+                    <textarea id="form-message" name="message" rows="5" required placeholder="Hi Raj, I reviewed your portfolio and would like to talk about..."></textarea>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                  <i data-lucide="send"></i>
+                  <span>Send Message</span>
+                </button>
+
+                <!-- In-form status feedback -->
+                <div id="form-status" style="display: none;"></div>
+
+                <!-- Direct Quick Action Options -->
+                <div class="form-alternative-actions">
+                  <span class="alt-divider-text">Or connect directly via</span>
+                  <div class="alt-buttons-group">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=raj643995@gmail.com&su=Portfolio%20Inquiry" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                      <i data-lucide="mail"></i>
+                      <span>Open in Gmail</span>
+                    </a>
+                    <a href="https://wa.me/918238388031?text=Hi%20Raj%2C%20I%20saw%20your%20portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                      <i data-lucide="message-square"></i>
+                      <span>WhatsApp</span>
+                    </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Details Modal Popup -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+    <div class="modal-dialog glass-panel">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-content" id="modal-content-area">
+        <!-- Injected via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Box -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Back to Top Floating Button -->
+  <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to Top">
+    <i data-lucide="chevron-up"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo">
+            <span class="logo-code">&lt;</span>Patel Raj<span class="logo-code">/&gt;</span>
+          </a>
+          <p class="footer-tagline">Building clean, efficient, and impactful web experiences.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://github.com/Raj-1632" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg class="lucide lucide-github" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+          </a>
+          <a href="https://linkedin.com/in/raj-patel" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg class="lucide lucide-linkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="mailto:raj643995@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+          <a href="tel:+918238388031" aria-label="Phone"><i data-lucide="phone"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Patel Raj. All rights reserved.</p>
+        <p class="footer-note">Designed & Built with HTML5, CSS3 & JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
